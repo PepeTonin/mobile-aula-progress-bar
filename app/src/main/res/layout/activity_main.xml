@@ -12,14 +12,14 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="10"
+        android:max="6"
         android:padding="20dp"
         android:progress="0"
         android:progressTint="@color/design_default_color_primary"
         android:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/guessWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:capitalize="characters"
@@ -28,12 +28,13 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/userInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Letra"
         android:inputType="text"
+        android:maxLength="1"
         android:textAlignment="center" />
 
     <Button
@@ -42,5 +43,12 @@
         android:layout_height="wrap_content"
         android:onClick="tryLetter"
         android:text="Fazer tentativa" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
 </LinearLayout>
