@@ -38,7 +38,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/tryLetterBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="tryLetter"
@@ -50,5 +50,13 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/newGameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newGame"
+        android:text="Joga novamente"
+        android:visibility="gone" />
 
 </LinearLayout>
